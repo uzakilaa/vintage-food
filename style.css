@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ===== HEADER ===== */
+.page_header {
+    min-height: 900px;
+    padding: 0 24px;
+    background-image: linear-gradient(180deg, #eda418 47.5%, rgba(237, 164, 24, 0) 100%);
+}
+
+.navigation {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: block;
+}
+
+.navigation_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.navigation_title_main {
+    font-weight: 700;
+    font-size: 22px;
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.navigation_title_main:hover {
+    color: #e62626;
+}
+
+.navigation_button {
+    display: grid;
+    place-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: #000;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.navigation_button:hover {
+    transform: scale(1.06);
+}
+
+.container_page_header {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.text_header_list {
+    max-width: 560px;
+}
+
+.text_header {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 1.15;
+}
+
+.text_header_discount {
+    padding: 24px 0 32px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.container_button_header {
+    display: inline-block;
+    padding: 14px 32px;
+    font-size: 22px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #e62626;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.container_button_header:hover {
+    background-color: #c81d1d;
+    transform: translateY(-2px);
+}
+
+.image_header {
+    width: min(642px, 50%);
+}
+
+/* ===== MENU ===== */
+.page_main {
+    padding: 60px 24px 80px;
+    text-align: center;
+}
+
+.catalog_title {
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.catalog_list {
+    max-width: 1450px;
+    margin: 45px auto 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px 30px;
+}
+
+.catalog_item img {
+    width: 100%;
+    border-radius: 16px;
+    transition: transform 0.3s ease;
+}
+
+.catalog_item:hover img {
+    transform: scale(1.03);
+}
+
+.catalog_text {
+    padding-top: 15px;
+    font-size: 28px;
+}
+
+/* ===== FOOTER ===== */
+.page_footer {
+    padding: 160px 24px 40px;
+    text-align: center;
+    background-image: linear-gradient(0deg, #eda418 47.5%, rgba(237, 164, 24, 0) 100%);
+}
+
+.footer_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px 80px;
+    font-size: 20px;
+}
+
+.footer_title {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer_title:hover {
+    text-decoration: underline;
+}
+
+.footer_page_text {
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+.footer_text {
+    padding-top: 16px;
+}
+
+.footer_contacts {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding-top: 25px;
+}
+
+.footer_images {
+    display: block;
+}
+
+/* ===== АДАПТИВ ===== */
+@media (max-width: 900px) {
+    .page_header {
+        min-height: auto;
+        padding-bottom: 40px;
+    }
+
+    .navigation {
+        padding-top: 32px;
+    }
+
+    .container_page_header {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .image_header {
+        width: min(420px, 90%);
+    }
+
+    .text_header {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 520px) {
+    .navigation {
+        justify-content: center;
+    }
+
+    .navigation_list {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .navigation_title_main {
+        font-size: 18px;
+    }
+
+    .navigation_button {
+        width: 56px;
+        height: 56px;
+    }
+
+    .text_header {
+        font-size: 30px;
+    }
+
+    .catalog_title {
+        font-size: 36px;
+    }
+
+    .catalog_text {
+        font-size: 22px;
+    }
+
+    .footer_list {
+        flex-direction: column;
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vintage Food — лендинг службы доставки бургеров. Учебный проект на HTML и CSS.">
+    <title>Vintage Food — доставка бургеров</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page_header" id="home">
+        <nav class="navigation">
+            <a href="#home"><img src="images/logo.png" class="logo" alt="Vintage Food"></a>
+            <ul class="navigation_list">
+                <li><a href="#home" class="navigation_title_main">Главная</a></li>
+                <li><a href="#menu" class="navigation_title_main">Меню</a></li>
+                <li><a href="#footer" class="navigation_title_main">О нас</a></li>
+            </ul>
+            <button class="navigation_button" type="button" aria-label="Корзина">
+                <img src="images/cart.png" class="nav_menu_basket_img" alt="">
+            </button>
+        </nav>
+        <div class="container_page_header">
+            <div class="text_header_list">
+                <h1 class="text_header">Быстрая доставка для вас</h1>
+                <p class="text_header_discount">Сделай первый заказ и получи скидку 50%</p>
+                <a class="container_button_header" href="#menu">Заказать</a>
+            </div>
+            <img src="images/hero-burger.png" width="642" height="600" class="image_header" alt="Бургер">
+        </div>
+    </header>
+
+    <main class="page_main">
+        <section class="container_catalog" id="menu">
+            <h2 class="catalog_title">Меню</h2>
+            <ul class="catalog_list">
+                <li class="catalog_item">
+                    <img src="images/burgers.png" width="450" height="300" alt="Бургеры" loading="lazy">
+                    <p class="catalog_text">Бургеры</p>
+                </li>
+                <li class="catalog_item">
+                    <img src="images/chicken.png" width="450" height="300" alt="Блюда из курицы" loading="lazy">
+                    <p class="catalog_text">Блюда из курицы</p>
+                </li>
+                <li class="catalog_item">
+                    <img src="images/hot-dishes.png" width="450" height="300" alt="Горячие блюда" loading="lazy">
+                    <p class="catalog_text">Горячие блюда</p>
+                </li>
+                <li class="catalog_item">
+                    <img src="images/snacks.png" width="450" height="300" alt="Закуски" loading="lazy">
+                    <p class="catalog_text">Закуски</p>
+                </li>
+                <li class="catalog_item">
+                    <img src="images/salads.png" width="450" height="300" alt="Салаты" loading="lazy">
+                    <p class="catalog_text">Салаты</p>
+                </li>
+                <li class="catalog_item">
+                    <img src="images/desserts.png" width="450" height="300" alt="Десерты" loading="lazy">
+                    <p class="catalog_text">Десерты</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="page_footer" id="footer">
+        <ul class="footer_list">
+            <li><a href="#footer" class="footer_title">Программа лояльности</a></li>
+            <li><a href="#footer" class="footer_title">Политика конфиденциальности</a></li>
+            <li><a href="#footer" class="footer_title">Договор оферты</a></li>
+        </ul>
+        <ul class="footer_page_text">
+            <li><p class="footer_text">ООО "Vintage Food"</p></li>
+            <li><p class="footer_text">© Все права защищены</p></li>
+        </ul>
+        <ul class="footer_contacts">
+            <li><a href="#footer" aria-label="VK"><img src="images/vk.png" width="50" height="50" class="footer_images" alt=""></a></li>
+            <li><a href="#footer" aria-label="Telegram"><img src="images/telegram.png" width="50" height="50" class="footer_images" alt=""></a></li>
+        </ul>
+    </footer>
+</body>
+</html>
